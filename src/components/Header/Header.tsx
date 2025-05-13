@@ -7,7 +7,6 @@ type Props = {
 
 export const Header = ({ activeSection }: Props) => {
   const [isScrolled, setIsScrolled] = useState(false);
-  const [mobileOpen, setMobileOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -25,8 +24,6 @@ export const Header = ({ activeSection }: Props) => {
     { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
   ];
-
-  const closeMobileMenu = () => setMobileOpen(false);
 
   return (
     <header
