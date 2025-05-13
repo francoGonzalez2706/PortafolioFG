@@ -1,0 +1,32 @@
+.sectionTitle {
+  text-align: center;
+  margin-bottom: 2rem;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.sectionTitle.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.sectionTitle h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sectionTitle .underline {
+  height: 4px;
+  width: 80px;
+  background-color: var(--primary);
+  margin: 12px auto 32px auto;
+}
+
+.sectionTitle p {
+  color: var(--muted-foreground);
+  max-width: 768px;
+}

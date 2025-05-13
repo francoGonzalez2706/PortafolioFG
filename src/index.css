@@ -1,0 +1,181 @@
+:root {
+  --background: rgb(255, 255, 255);
+  --background-rgb: 255, 255, 255;
+
+  --foreground: rgb(10, 7, 6);
+  --foreground-rgb: 10, 7, 6;
+
+  --muted: rgb(245, 245, 242);
+  --muted-rgb: 245, 245, 242;
+
+  --muted-foreground: rgb(114, 109, 103);
+  --muted-foreground-rgb: 114, 109, 103;
+
+  --popover: rgb(255, 255, 255);
+  --popover-rgb: 255, 255, 255;
+
+  --popover-foreground: rgb(10, 7, 6);
+  --popover-foreground-rgb: 10, 7, 6;
+
+  --card: rgb(255, 255, 255);
+  --card-rgb: 255, 255, 255;
+
+  --card-foreground: rgb(10, 7, 6);
+  --card-foreground-rgb: 10, 7, 6;
+
+  --border: rgb(229, 226, 222);
+  --border-rgb: 229, 226, 222;
+
+  --input: rgb(229, 226, 222);
+  --input-rgb: 229, 226, 222;
+
+  --primary: rgb(30, 144, 245);
+  --primary-rgb: 30, 144, 245;
+
+  --primary-foreground: rgb(250, 253, 255);
+  --primary-foreground-rgb: 250, 253, 255;
+
+  --secondary: rgb(245, 245, 242);
+  --secondary-rgb: 245, 245, 242;
+
+  --secondary-foreground: rgb(26, 23, 20);
+  --secondary-foreground-rgb: 26, 23, 20;
+
+  --accent: rgb(245, 245, 242);
+  --accent-rgb: 245, 245, 242;
+
+  --accent-foreground: rgb(26, 23, 20);
+  --accent-foreground-rgb: 26, 23, 20;
+
+  --destructive: rgb(244, 67, 54);
+  --destructive-rgb: 244, 67, 54;
+
+  --destructive-foreground: rgb(253, 253, 249);
+  --destructive-foreground-rgb: 253, 253, 249;
+
+  --ring: rgb(10, 7, 6);
+  --ring-rgb: 10, 7, 6;
+
+  --sucess: rgb(0, 196, 101);
+  --sucess-rgb: 0, 196, 101;
+
+  --sucess-foreground: rgb(253, 253, 249);
+  --sucess-foreground-rgb: 253, 253, 249;
+}
+
+/* .dark {
+  --background: rgb(9, 10, 14);
+  --background-rgb: 9, 10, 14;
+
+  --foreground: rgb(250, 250, 250);
+  --foreground-rgb: 250, 250, 250;
+
+  --muted: rgb(40, 42, 47);
+  --muted-rgb: 40, 42, 47;
+
+  --muted-foreground: rgb(163, 167, 180);
+  --muted-foreground-rgb: 163, 167, 180;
+
+  --popover: rgb(9, 10, 14);
+  --popover-rgb: 9, 10, 14;
+
+  --popover-foreground: rgb(250, 250, 250);
+  --popover-foreground-rgb: 250, 250, 250;
+
+  --card: rgb(9, 10, 14);
+  --card-rgb: 9, 10, 14;
+
+  --card-foreground: rgb(250, 250, 250);
+  --card-foreground-rgb: 250, 250, 250;
+
+  --border: rgb(40, 42, 47);
+  --border-rgb: 40, 42, 47;
+
+  --input: rgb(40, 42, 47);
+  --input-rgb: 40, 42, 47;
+
+  --primary: rgb(30, 144, 245);
+  --primary-rgb: 30, 144, 245;
+
+  --primary-foreground: rgb(250, 253, 255);
+  --primary-foreground-rgb: 250, 253, 255;
+
+  --secondary: rgb(40, 42, 47);
+  --secondary-rgb: 40, 42, 47;
+
+  --secondary-foreground: rgb(250, 250, 250);
+  --secondary-foreground-rgb: 250, 250, 250;
+
+  --accent: rgb(40, 42, 47);
+  --accent-rgb: 40, 42, 47;
+
+  --accent-foreground: rgb(250, 250, 250);
+  --accent-foreground-rgb: 250, 250, 250;
+
+  --destructive: rgb(128, 54, 53);
+  --destructive-rgb: 128, 54, 53;
+
+  --destructive-foreground: rgb(250, 250, 250);
+  --destructive-foreground-rgb: 250, 250, 250;
+
+  --ring: rgb(209, 212, 225);
+  --ring-rgb: 209, 212, 225;
+} */
+
+* {
+  border-color: #e5e7eb;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #ffffff;
+  color: #000000;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+}
+
+/* Custom animations and styling */
+[data-section] {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+}
+
+[data-section].visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Timeline styling */
+.timeline-line {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 20px;
+  width: 2px;
+  background-color: hsl(var(--primary) / 0.3);
+}
+
+.timeline-dot::before {
+  content: "";
+  position: absolute;
+  left: -5px;
+  top: 24px;
+  width: 10px;
+  height: 10px;
+  background-color: hsl(var(--primary));
+  border-radius: 50%;
+  z-index: 2;
+}

@@ -1,0 +1,11 @@
+.containerIcons {
+  display: flex;
+  gap: 1rem;
+}
+.iconSocialMedia {
+  color: var(--muted-foreground);
+  font-size: 1.4rem;
+}
+.iconSocialMedia:hover {
+  color: var(--primary);
+}

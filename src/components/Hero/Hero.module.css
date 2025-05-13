@@ -1,0 +1,143 @@
+.containerHero {
+  min-height: 100vh;
+  width: 100%;
+  position: relative;
+}
+.backgroundImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.15;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.ContainerPresentation {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  width: 80%;
+  max-height: 50%;
+}
+.containerImg {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+}
+.FGimg {
+  object-fit: cover;
+  border-radius: 50%;
+  width: 20rem;
+  height: 20rem;
+  border: 5px solid var(--primary-foreground);
+  animation: enterImg 1s ease-in-out;
+}
+.PersonalInfoCont {
+  display: flex;
+  flex-direction: column;
+  gap: 1.9rem;
+  animation: enterInfo 1s ease-in-out;
+}
+.TitleDeveloper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.developer {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 500;
+}
+.title {
+  font-size: 3.75rem;
+  line-height: 1;
+  font-weight: bold;
+}
+.bars {
+  width: 4rem;
+  height: 0.3rem;
+  background-color: var(--primary);
+}
+.description {
+  color: var(--muted-foreground);
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+  max-width: 36rem;
+}
+.containerBtns {
+  display: flex;
+  gap: 1rem;
+}
+.btn {
+  padding: 0.7rem 1.2rem;
+  font-weight: 200;
+  font-size: 1.1rem;
+  border-radius: 0.5rem;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+.getTouchBtn {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+.getTouchBtn:hover {
+  background-color: rgba(var(--primary-rgb), 0.7);
+}
+.myWorkBtn {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+.myWorkBtn:hover {
+  background-color: rgba(var(--background-rgb), 0.7);
+}
+.arrowAbout {
+  position: absolute;
+  top: 95%;
+  left: 50%;
+  font-size: 2rem;
+  animation: upAndDown 2s infinite;
+}
+.arrowAbout i {
+  color: var(--primary);
+}
+@keyframes upAndDown {
+  0% {
+    transform: translateY(-10%);
+  }
+  50% {
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(-10%);
+  }
+}
+
+@keyframes enterInfo {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+@keyframes enterImg {
+  0% {
+    opacity: 0;
+    scale: 0.8;
+  }
+
+  100% {
+    opacity: 1;
+    scale: 1;
+  }
+}

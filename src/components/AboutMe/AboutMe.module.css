@@ -1,0 +1,110 @@
+.ContainerAbout {
+  padding: 5rem;
+  min-height: 100vh;
+}
+.containerAboutData {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+.containerAboutData.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.ImgPlusYears {
+  position: relative;
+  justify-self: flex-end;
+}
+.imgAbout {
+  height: auto;
+  border-radius: 0.5rem;
+}
+
+.aboutMe {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.aboutMe h3 {
+  font-size: 2.1rem;
+}
+
+.aboutMe p {
+  color: var(--muted-foreground);
+  max-width: 45rem;
+}
+.gridAboutitems {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+.gridItem {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.labelData {
+  font-weight: bold;
+}
+.valueData {
+  color: var(--muted-foreground);
+}
+
+.buttonResume {
+  background: var(--primary);
+  border: none;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  color: var(--primary-foreground);
+  cursor: pointer;
+  width: 20%;
+  transition: all 0.3s ease;
+}
+.buttonResume:hover {
+  background: rgba(var(--primary-rgb), 0.8);
+  scale: 1.03;
+}
+.available {
+  color: var(--sucess);
+}
+.containerPlusYears {
+  position: absolute;
+  bottom: -1.5rem;
+  right: -1.5rem;
+  background-color: white;
+  border-radius: 0.5rem;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+  padding: 1rem;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .containerPlusYears {
+    display: block;
+  }
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* gap-2 = 8px */
+}
+
+.number {
+  font-size: 2.25rem; /* text-4xl ≈ 36px */
+  font-weight: bold;
+  color: rgb(30, 144, 245); /* text-primary (ajustalo según tu tema) */
+}
+
+.label {
+  color: rgb(114, 109, 103); /* text-muted-foreground (ajustalo también) */
+}
