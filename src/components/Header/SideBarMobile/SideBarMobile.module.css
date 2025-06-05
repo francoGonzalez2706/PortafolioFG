@@ -1,0 +1,57 @@
+.sideBarContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  backdrop-filter: blur(10px);
+  z-index: 400;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.navDesktop {
+  position: relative;
+  width: 75%;
+  height: 100%;
+  padding: 5rem;
+  background-color: var(--primary-foreground);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+.close_sidebar {
+  position: absolute;
+  top: 5%;
+  left: 5%;
+  font-size: 1rem;
+}
+.navLink {
+  font-weight: 500;
+  color: var(--foreground);
+  transition: color 0.3s ease;
+}
+
+.navLink:hover {
+  color: var(--primary);
+}
+
+.navLinkActive {
+  color: var(--primary);
+}
+
+.buttonResume {
+  background: var(--primary);
+  border: none;
+  font-size: 1rem;
+  padding: 0.7rem;
+  border-radius: 0.5rem;
+  color: var(--primary-foreground);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttonResume:hover {
+  background: rgba(var(--primary-rgb), 0.8);
+  scale: 1.03;
+}

@@ -141,3 +141,25 @@
     scale: 1;
   }
 }
+@media (max-width: 980px) {
+  .containerImg {
+    display: none;
+  }
+  .ContainerPresentation {
+    display: flex;
+  }
+}
+@media (max-width: 480px) {
+  .movilContainer {
+    display: block;
+  }
+  .TitleDeveloper {
+    gap: 0rem;
+  }
+  .navDesktop {
+    display: none;
+  }
+  .PersonalInfoCont {
+    gap: 1rem;
+  }
+}

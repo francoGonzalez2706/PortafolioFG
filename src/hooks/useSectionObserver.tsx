@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import styles from "@components/Header/Header.module.css";
 
 export const useSectionObserver = () => {
   useEffect(() => {
@@ -6,16 +7,15 @@ export const useSectionObserver = () => {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("visible");
+            entry.target.classList.add(`.${styles.navLinkActive}`);
           }
         });
       },
       { threshold: 0.1 }
     );
-
-    const sections = document.querySelectorAll("[data-section]");
+    const sections = document.querySelectorAll(`.${styles.navLink}`);
+    console.log(sections);
     sections.forEach((section) => {
-      // No need to add classes here since we have them in CSS
       observer.observe(section);
     });
 

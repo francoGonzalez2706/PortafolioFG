@@ -5,7 +5,7 @@ export const useScrollSpy = () => {
 
   useEffect(() => {
     const sections = document.querySelectorAll("section[id]");
-
+    console.log(sections);
     const handleScroll = () => {
       let current = "";
       const scrollY = window.pageYOffset;

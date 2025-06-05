@@ -12,6 +12,7 @@
   transform: translateY(20px);
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
+
 .containerAboutData.visible {
   opacity: 1;
   transform: translateY(0);
@@ -107,4 +108,41 @@
 
 .label {
   color: rgb(114, 109, 103); /* text-muted-foreground (ajustalo también) */
+}
+
+@media (max-width: 980px) {
+  .containerImg {
+    display: none;
+  }
+  .containerAboutData {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgAbout {
+    width: 100%;
+  }
+  .gridAboutitems {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonResume {
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .containerAboutData {
+    display: flex;
+    flex-direction: column;
+  }
+  .imgAbout {
+    width: 100%;
+  }
+  .gridAboutitems {
+    display: flex;
+    flex-direction: column;
+  }
+  .buttonResume {
+    width: 100%;
+  }
 }

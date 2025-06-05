@@ -47,7 +47,7 @@
   --accent-foreground: rgb(26, 23, 20);
   --accent-foreground-rgb: 26, 23, 20;
 
-  --destructive: rgb(244, 67, 54);
+  --destructive: #f44336;
   --destructive-rgb: 244, 67, 54;
 
   --destructive-foreground: rgb(253, 253, 249);
@@ -63,7 +63,7 @@
   --sucess-foreground-rgb: 253, 253, 249;
 }
 
-/* .dark {
+.dark {
   --background: rgb(9, 10, 14);
   --background-rgb: 9, 10, 14;
 
@@ -120,7 +120,7 @@
 
   --ring: rgb(209, 212, 225);
   --ring-rgb: 209, 212, 225;
-} */
+}
 
 * {
   border-color: #e5e7eb;

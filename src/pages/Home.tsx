@@ -5,15 +5,13 @@ import { useSectionObserver } from "@hooks/useSectionObserver";
 import { ButtonGoTop } from "@components/ui/ButtonGoTop/ButtonGoTop";
 import { Hero } from "@components/Hero/Hero";
 import { AboutMe } from "@components/AboutMe/AboutMe";
+import { Skills } from "@components/skills/Skills";
+import { Exprerience } from "@components/Experience/Experience";
+import Footer from "@components/Footer/Footer";
 
 export const Home = () => {
-  // Initialize intersection observer for animation
   useSectionObserver();
-
-  // Initialize scroll spy for navigation
   const activeSection = useScrollSpy();
-
-  // Add back-to-top functionality
   const [showBackToTop, setShowBackToTop] = useState(false);
 
   useEffect(() => {
@@ -39,8 +37,10 @@ export const Home = () => {
       <main>
         <Hero />
         <AboutMe />
+        <Skills />
+        <Exprerience />
       </main>
-      {/* <Footer /> */}
+      <Footer />
 
       {showBackToTop && <ButtonGoTop scrollToTop={scrollToTop} />}
     </div>
