@@ -2,7 +2,6 @@ import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 import { downloadCV } from "../../utils";
 import { SideBarMobile } from "./SideBarMobile/SideBarMobile";
-import { toast } from "@components/Toast/Toast";
 type Props = {
   activeSection: string;
 };
