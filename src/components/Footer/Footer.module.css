@@ -29,6 +29,7 @@
 }
 
 .footerBrand {
+  flex: 1;
   margin-bottom: 1.5rem;
   text-align: center;
 }
@@ -57,6 +58,7 @@
 }
 
 .navLinks {
+  flex: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -82,7 +84,9 @@
 
 .socialLinks {
   display: flex;
+  justify-content: flex-end;
   gap: 1rem;
+  flex: 1;
 }
 
 .socialLink {

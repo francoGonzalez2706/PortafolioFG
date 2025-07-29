@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import styles from "./Header.module.css";
 import { downloadCV } from "../../utils";
 import { SideBarMobile } from "./SideBarMobile/SideBarMobile";
+import { toast } from "@components/Toast/Toast";
 type Props = {
   activeSection: string;
 };
@@ -23,7 +24,6 @@ export const Header = ({ activeSection }: Props) => {
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skillData" },
     { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
   ];
   const [theme, settheme] = useState(true);

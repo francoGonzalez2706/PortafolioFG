@@ -8,6 +8,8 @@ import { AboutMe } from "@components/AboutMe/AboutMe";
 import { Skills } from "@components/skills/Skills";
 import { Exprerience } from "@components/Experience/Experience";
 import Footer from "@components/Footer/Footer";
+import { ContactMe } from "@components/ContactMe/ContactMe";
+import { Toast } from "@components/Toast/Toast";
 
 export const Home = () => {
   useSectionObserver();
@@ -32,17 +34,22 @@ export const Home = () => {
 
   return (
     <div style={{ minHeight: "100vh" }}>
-      <Header activeSection={activeSection} />
+      <Toast>
+        <>
+          <Header activeSection={activeSection} />
 
-      <main>
-        <Hero />
-        <AboutMe />
-        <Skills />
-        <Exprerience />
-      </main>
-      <Footer />
+          <main>
+            <Hero />
+            <AboutMe />
+            <Skills />
+            <Exprerience />
+            <ContactMe />
+          </main>
+          <Footer />
 
-      {showBackToTop && <ButtonGoTop scrollToTop={scrollToTop} />}
+          {showBackToTop && <ButtonGoTop scrollToTop={scrollToTop} />}
+        </>
+      </Toast>
     </div>
   );
 };

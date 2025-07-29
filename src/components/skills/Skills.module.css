@@ -5,11 +5,12 @@
   align-items: center;
   gap: 5rem;
   min-height: 50dvh;
+  color: var(--textColor);
 }
 .skills {
   border-radius: 0.5rem;
   padding: 1rem;
-  background-color: #f5f5f5;
+  background-color: var(--secondary);
   display: flex;
   flex-direction: column;
   max-width: 500px;

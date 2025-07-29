@@ -4,7 +4,6 @@ export default function Footer() {
     { label: "About", href: "#about" },
     { label: "Skills", href: "#skillData" },
     { label: "Experience", href: "#experience" },
-    { label: "Projects", href: "#projects" },
     { label: "Contact", href: "#contact" },
   ];
   const socialLinks = [
@@ -18,7 +17,11 @@ export default function Footer() {
       href: "https://github.com/francoGonzalez2706",
       label: "GitHub",
     },
-    { icon: "ri-twitter-fill", href: "#", label: "Twitter" },
+    {
+      icon: "ri-instagram-fill",
+      href: "https://www.instagram.com/francogonzalez276/",
+      label: "Instagram",
+    },
   ];
 
   const currentYear = new Date().getFullYear();

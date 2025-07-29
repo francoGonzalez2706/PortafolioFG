@@ -1,5 +1,6 @@
 .sectionExperience {
   padding: 5rem;
+  color: var(--textColor);
 }
 .carouselWrapper {
   display: flex;
@@ -33,7 +34,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: var(--card);
+  background-color: var(--background);
   border-radius: 0.75rem;
   padding: 1.5rem;
   z-index: 100;
@@ -43,7 +44,7 @@
 .active {
   transform: scale(1.05);
   opacity: 1;
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 10px 15px rgba(var(--accent-foreground-rgb), 0.3);
   will-change: transform;
   backface-visibility: hidden;
   transform-style: preserve-3d;
@@ -55,7 +56,7 @@
 
 /* Hover */
 .inactive:hover {
-  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 10px 15px rgba(var(--accent-foreground-rgb), 0.1);
 }
 
 .containerPosition {
@@ -91,7 +92,7 @@
   color: var(--muted-foreground);
 }
 .description {
-  color: #444;
+  color: var(--textMuted);
 }
 .responsabilities {
   font-weight: 600;
@@ -124,12 +125,12 @@
 .icons {
   cursor: pointer;
   font-size: 3rem;
-  transition: transform 0.3s ease;
-  color: #444;
+  transition: all 0.3s ease;
+  color: var(--textMuted);
 }
 
 .icons:hover {
-  color: #000;
+  color: var(--textColor);
   transform: scale(1.05);
 }
 @media (max-width: 480px) {

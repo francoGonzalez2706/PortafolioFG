@@ -14,7 +14,6 @@ export const useSectionObserver = () => {
       { threshold: 0.1 }
     );
     const sections = document.querySelectorAll(`.${styles.navLink}`);
-    console.log(sections);
     sections.forEach((section) => {
       observer.observe(section);
     });
