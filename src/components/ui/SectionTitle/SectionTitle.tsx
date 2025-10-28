@@ -13,7 +13,7 @@ export const SectionTitle = ({ title, subtitle }: Props) => {
       ref={ref}
       className={`${styles.sectionTitle} ${isVisible ? styles.visible : ""}`}
     >
-      <h2>{title}</h2>
+      <h2 style={{ color: "var(--textColor)" }}>{title}</h2>
       <div className={styles.underline}></div>
       <p>{subtitle}</p>
     </div>
