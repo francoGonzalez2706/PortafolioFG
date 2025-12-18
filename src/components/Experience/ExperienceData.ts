@@ -1,27 +1,50 @@
 export const experienceData = [
   {
-    position: "Mid-Level Frontend Developer",
+    position: "Mid-Level Full-Stack Developer",
     company: "Amelia Hub",
     period: "08/2024 - present",
     isCurrent: true,
     description:
-      "Desarrollo de aplicaciones SPA con Vue.js y integración con APIs REST",
+      "Development of scalable web and mobile applications, integrating frontend, backend, and real-time solutions with a strong focus on performance and maintainability",
     responsabilities: [
-      "Developed and maintained web applications using React and TypeScript, ensuring dynamic and efficient interfaces",
+      "Developed and maintained SPA web applications using React and TypeScript, delivering dynamic and high-performance user interfaces",
 
-      "Designed and optimized reusable UI component libraries, published on npm, ensuring scalability and consistency across multiple projects",
+      "Designed, implemented, and optimized reusable UI component libraries, published on npm, ensuring scalability and consistency across multiple projects",
 
-      "Implemented interactive 3D interfaces with Three.js and integrated interactive maps using Mapbox, enhancing user experience on geospatial visualization platforms",
+      "Built RESTful APIs using Flask and Python, handling authentication, data processing, and integration with frontend and mobile applications",
 
-      "Developed modular systems based on scalable design patterns, ensuring maintainable and easily extensible architecture",
+      "Developed and maintained cross-platform mobile applications using React Native and Expo for iOS and Android environments",
 
-      "Integrated state management tools like Zustand, optimizing application fluidity",
+      "Implemented real-time features using WebSockets, enabling live data synchronization between backend services and web/mobile clients",
 
-      "Developed unit and integration tests using Jest and React Testing Library to ensure system stability",
+      "Implemented interactive 3D interfaces using Three.js and React Three Fiber (R3F), enhancing data visualization and user interaction",
 
-      "Applied accessibility and performance principles, optimizing load times and ensuring inclusive interfaces",
+      "Integrated interactive maps using Mapbox, supporting advanced geospatial visualization use cases",
+
+      "Developed modular and scalable systems based on clean architecture and design patterns, ensuring long-term maintainability",
+
+      "Integrated state management solutions such as Zustand to improve application predictability and performance",
+
+      "Developed unit and integration tests using Jest and React Testing Library to ensure application reliability and stability",
+
+      "Applied accessibility, performance optimization, and best practices to ensure inclusive and efficient user experiences",
     ],
-    tecnologies: ["React.js", "Typescript", "R3F", "MapBox", "Git"],
+    tecnologies: [
+      "React.js",
+      "TypeScript",
+      "React Native",
+      "Expo",
+      "Python",
+      "Flask",
+      "WebSockets",
+      "Three.js",
+      "React Three Fiber (R3F)",
+      "Mapbox",
+      "Zustand",
+      "Jest",
+      "React Testing Library",
+      "Git",
+    ],
   },
   {
     position: "University Teacher",

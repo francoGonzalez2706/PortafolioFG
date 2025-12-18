@@ -94,7 +94,7 @@ export const ContactMe = () => {
                 </p>
                 <p className={styles.paragraph}>
                   Looking for remote positions and interesting projects where I
-                  can contribute my frontend and 3D development expertise.
+                  can contribute my Full Stack expertise.
                 </p>
               </div>
             </div>

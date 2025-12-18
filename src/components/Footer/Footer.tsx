@@ -35,9 +35,7 @@ export default function Footer() {
               <span className={styles.textForeground}>Franco</span>
               <span className={styles.textPrimary}>.</span>
             </a>
-            <p className={styles.textMuted}>
-              Frontend Developer & 3D Specialist
-            </p>
+            <p className={styles.textMuted}>Full-Stack Developer</p>
           </div>
 
           <div className={styles.navLinks}>

@@ -41,9 +41,9 @@ export const AboutMe = () => {
             </div>
           </div>
           <div className={styles.aboutMe}>
-            <h3>Frontend Developer </h3>
+            <h3>Full-Stack Developer </h3>
             <p className="text-muted-foreground mb-6">
-              I am a passionate Frontend Developer with a degree in Software
+              I am a passionate Full-Stack Developer with a degree in Software
               Development, bringing expertise in creating dynamic and
               interactive web interfaces. My approach blends design and
               functionality to provide optimized user experiences.

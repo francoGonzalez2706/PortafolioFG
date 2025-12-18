@@ -12,7 +12,7 @@ type Skills = {
 
 const data: Skills = {
   Frontend: {
-    value: ["React", "CSS", "HTML", "Javascript"],
+    value: ["React", "CSS", "HTML", "Javascript", "React Native + Expo"],
     color: "var(--primary)",
   },
   Backend: {

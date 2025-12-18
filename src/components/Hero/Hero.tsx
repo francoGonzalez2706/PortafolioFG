@@ -16,14 +16,14 @@ export const Hero = () => {
         <div className={styles.PersonalInfoCont}>
           <div className={styles.TitleDeveloper}>
             <div className={styles.bars}></div>
-            <h2 className={styles.developer}>Frontent Developer</h2>
+            <h2 className={styles.developer}>Full-Stack Developer</h2>
           </div>
           <h1 className={styles.title}>
             Hi, I'm <span style={{ color: "var(--primary)" }}>Franco</span>{" "}
             Gonzalez
           </h1>
           <p className={styles.description}>
-            A passionate Mid-Level Frontend Developer specializing in creating
+            A passionate Mid-Level Full-Stack Developer specializing in creating
             dynamic and interactive web interfaces with React, TypeScript, and
             3D technologies.
           </p>
@@ -35,7 +35,7 @@ export const Hero = () => {
               Get In Touch
             </a>
             <a
-              href={"#projects"}
+              href={"#experience"}
               className={`${styles.btn} ${styles.myWorkBtn}`}
             >
               See My Work
@@ -47,7 +47,7 @@ export const Hero = () => {
         <div className={styles.containerImg}>
           <img
             src={myImg}
-            alt="Franco Gonzalez, Frontend Developer"
+            alt="Franco Gonzalez, Full-Stack Developer"
             className={styles.FGimg}
           />
         </div>
